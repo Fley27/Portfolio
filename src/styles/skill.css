@@ -1,0 +1,58 @@
+.skill-container{
+    width: 90vw;
+    height: 100vh;
+    margin-left: auto;
+    margin-right: 0;
+    padding-top: 10vh;
+    font-family: "Raleway";
+}
+
+.skill{
+    width: 100%;
+    height: 35vh;
+}
+
+.skill-title{
+    width: 92%;
+    margin: 0 auto;
+    text-align: left;
+    font-size: 55px;
+    font-weight: 900;
+    color: #51d0fe;
+    letter-spacing: 2px;
+}
+
+.skill-description{
+    width: 92%;
+    margin: 0 auto;
+    text-align: left;
+    font-size: 15px;
+    font-weight: 300;
+    letter-spacing: 2px;
+    color: #fff;
+    line-height: 2;
+}
+
+.project-container{
+    width: 95vw;
+    margin: 0 auto;
+}
+
+.project{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly ;
+    position: relative;
+    height: 40vh;
+    margin-bottom: 10px;
+    width: 100%;
+    left: -10vh;
+    z-index: 0;
+}
+
+.project-card{
+    height: 350px;
+    width: 32%;
+    background-color: rgb(62, 56, 56);
+    border-radius: 7px;
+}
