@@ -1,0 +1,127 @@
+.about-container{
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 60px;
+    font-family: "Raleway";
+    display: flex;
+    flex-direction: row;
+}
+
+.about-page{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 70px 0;
+}
+
+.-component{
+    width: 100%;
+    margin: auto 0;
+    min-height: 400px;
+}
+
+
+.social-media-link-container{
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+}
+
+.social-media-link{
+    height: 60px;
+    width: 60px;
+    border: #08fdd8 3px solid;
+    border-radius: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:  0;
+    margin-right: 30px;
+    cursor: pointer;
+}
+
+.dark-mode .social-media-link{
+    border-color: rgb(99, 132, 240);
+}
+
+.social-media-link i{
+    font-size: 30px;
+    color: gray;
+}
+
+.dark-mode .social-media-link i {
+    color: #1d1d1df0;
+}
+
+.dark-mode .social-media-link:hover i{
+    color: rgb(99, 132, 240);
+}
+
+.social-media-link:hover i{
+    color: #08fdd8;
+}
+
+
+
+@media only screen and (max-width: 770px) {
+    .about-container{
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width: 670px){
+    .about-title{
+        font-size: 25px;
+    }
+
+    @keyframes typing_about_title {
+        from { width: 0; opacity: 1; }
+        to { width: 230px; opacity: 1; }
+    }
+
+    .about-description{
+        font-size: 12px;
+    }
+
+    .social-media-link{
+        width: 40px;
+        height: 40px;
+    }
+
+    .social-media-link i {
+        font-size: 19px;
+    }
+}
+
+@media only screen and (max-width: 545px){
+    .about-title{
+        font-size: 22px;
+    }
+
+    @keyframes typing_about_title {
+        from { width: 0; opacity: 1; }
+        to { width: 210px; opacity: 1; }
+    }
+
+    .about-description{
+        font-size: 12px;
+    }
+
+    .image-container,
+    .about-image{
+        width: 200px;
+        height: 200px;
+    }
+}
+
+@media only screen and (max-width: 400px){
+    .about-title{
+        font-size: 18px;
+    }
+
+    @keyframes typing_about_title {
+        from { width: 0; opacity: 1; }
+        to { width: 180px; opacity: 1; }
+    }
+}

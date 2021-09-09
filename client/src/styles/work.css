@@ -1,0 +1,147 @@
+.work-container{
+    width: 100%;
+    min-height: 500px;
+    margin-left: auto;
+    margin-right: 0;
+    font-family: "Raleway";
+}
+
+.work{
+    width: 80%;
+    min-height: 300px;
+    margin: 0 auto;
+}
+
+.work-title{
+    margin: 0 auto;
+    text-align: left;
+    font-size: 45px; 
+    font-weight: 600;
+    color: #08fdd8;
+    letter-spacing: 2px;
+    margin: 60px 0;
+}
+
+.dark-mode .work-title{
+    color: rgb(99, 132, 240);
+}
+
+.dark-mode .work-description{
+    color: #1d1d1df0;
+}
+
+.work-description{
+    margin: 0 auto;
+    text-align: left;
+    font-size: 16px;
+    color: rgb(91, 91, 91);
+    font-weight: 500;
+    letter-spacing: 2px;
+    line-height: 2;
+    margin-bottom: 40px;
+    color: #fff;
+}
+
+.project{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between ;
+    flex-wrap: wrap;
+    position: relative;
+    height: 100%;
+    margin-bottom: 10px;
+    min-height: 300px;
+    margin-top: 100px;
+}
+
+.overlay-project{
+    height: 60%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.673);
+    position: relative;
+    top: -60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 20px;
+}
+
+.overlay-title{
+    width: 100%;
+    text-align: left;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600px;
+}
+
+.overlay-description{
+    width: 100%;
+    text-align: left;
+    font-size: 14px;
+    color: rgb(176, 173, 173);
+    line-height: 1.4;
+}
+
+.project-card{
+    height: 300px;
+    width: 32%;
+    min-width: 300px;
+    background-color: rgb(62, 56, 56);
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+.project-card a{
+    text-decoration: none;
+}
+
+.img-background,
+.img-background img{
+    width: 100%;
+    height: 100%;
+}
+
+@media only screen and (max-width: 1180px){
+    .project-card{
+        width: 47%;
+        margin: 20px 0;
+    }
+}
+
+@media only screen and (max-width: 950px) {
+    .work-title{
+        font-size: 35px;
+    }
+}
+
+@media only screen and (max-width: 899px){
+    .project-card{
+        min-width: 100%;
+        max-width: 100%;
+        width: auto;
+        margin: 10px auto;
+        height: 200px;
+    }
+}
+
+@media only screen and (max-width: 770px) {
+    .work-title{
+        font-size: 30px;
+    }
+
+    .work{
+        width: 90%;
+    }
+
+    .work-description{
+        font-size: 14px;
+    }
+}
+
+@media only screen and (max-width: 370px) {
+    .work-title{
+        font-size: 25px;
+    }
+}
+

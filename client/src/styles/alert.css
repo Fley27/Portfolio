@@ -1,0 +1,26 @@
+.alert-pop-pup{
+    width: 60%;
+    margin: 0 auto;
+    text-align: center;
+    position: absolute;
+    left: 20%;
+    z-index: 999999999999999999999999999999999;
+    position: fixed;
+    top: 130px;
+    font-family: "Raleway";
+    font-size: 13px;
+}
+
+.success{
+    background-color: rgb(122, 157, 122);
+    color: #fff;
+    height: 50px;
+    border-radius: 5px;
+}
+
+.error{
+    background-color: rgb(208, 114, 114);
+    color: #fff;
+    height: 50px;
+    border-radius: 5px;
+}
