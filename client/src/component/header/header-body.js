@@ -20,7 +20,7 @@ const HeaderBody = (props) =>{
                     <div className = "text-zone-description">
                         High level experience in web and mobile development knowledge, producing quality work.
                     </div>
-                    <button className = "button-header-contact">
+                    <button onClick = {()=> window.location.href = "/contact"} className = "button-header-contact">
                         Contact me !
                     </button>
                     <div className = "mouse-down-container">
