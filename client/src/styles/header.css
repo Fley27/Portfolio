@@ -1,6 +1,7 @@
 .header-container{
     width: 100%;
     height: 100vh;
+    min-width: 5;
     display: flex;
     flex-direction: column;
     overflow: hidden;
@@ -534,6 +535,9 @@
 
 
 @media only screen and (max-width: 570px){
+    .header-container{
+        height: 800px;
+    }
     .header{
         flex-direction: column-reverse;
         margin-bottom: auto;
