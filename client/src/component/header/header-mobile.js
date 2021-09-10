@@ -1,4 +1,7 @@
 import React from "react";
+import {connect} from 'react-redux';
+import { setMode } from '../../redux/action/action';
+import PropTypes from 'prop-types';
 import "../../styles/header.css";
 
 
@@ -28,8 +31,8 @@ const HeaderMobile = ({show, handleShow, main_link, ...props}) => {
                     <div className = "nav-item-mobile">
                         <button className = "nav-item-mobile-text">
                             {
-                                props.dark ? (<span onClick = {()=>props.handleDark()}><i className="fas fa-moon"></i></span>): 
-                                (<span onClick = {()=>props.handleDark()}><i className="far fa-moon"></i></span>)
+                                props.dark ? (<span onClick = {()=>props.setMode(false)}><i className="fas fa-moon"></i></span>): 
+                                (<span onClick = {()=>props.setMode(true)}><i className="far fa-moon"></i></span>)
                             }
                         </button>
                     </div>
@@ -38,4 +41,9 @@ const HeaderMobile = ({show, handleShow, main_link, ...props}) => {
     )
 }
 
-export default HeaderMobile;
+HeaderMobile.propTypes = {
+    setMode: PropTypes.object.isRequired
+}
+
+
+export default connect(null, {setMode})(HeaderMobile);
