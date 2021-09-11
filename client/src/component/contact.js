@@ -1,7 +1,8 @@
-import React, {useState, useEffect} from "react";
+import React, {useState} from "react";
 import { connect } from "react-redux";
 import PropTypes from "prop-types";
 import { sendEmail } from "../redux/action/email";
+import emailjs from 'emailjs-com';
 import { setAlert } from "../redux/action/alert";
 import  WorldMap from 'react-world-map';
 import "../styles/contact.css"
@@ -14,19 +15,6 @@ const Contact = (props) => {
         subject: "",
         message: ""
     });
-
-    useEffect(() => {
-        if(props.email){
-            if (props.email.msg !== ""){
-                setState({
-                    name: "",
-                    subject: "",
-                    email: "",
-                    message: ""
-                })
-            }
-        }
-    }, [props.email.msg])
 
     const handleChange = (e) =>{
         const {name, value} = e.target;
@@ -45,7 +33,18 @@ const Contact = (props) => {
         obj.email = state.email;
         obj.message = state.message;
 
-        props.sendEmail(JSON.stringify(obj))
+        emailjs.sendForm('service_7jt33ni', 'template_eyx34nw', e.target, 'user_iCcrHAsQdbfvFey65FEL1')
+        .then((result) => {
+            setState({
+                name: "",
+                subject: "",
+                email: "",
+                message: ""
+            })
+            props.setAlert("Your message has been sent successfully", "success");
+        }, (error) => {
+            props.setAlert("Request Failed, Try later.", "error")
+        });
     }
     
     return(
