@@ -11,7 +11,7 @@ const ProjectCard = () =>{
                     <div className = "overlay-project">
                         <div className = "overlay-title">Alif</div>
                         <div className = "overlay-description">
-                            It is my own project. It's a portfolio for my translation & transcription agency. Please take a look & don't hesitate to contact us in case that you need our services. 
+                            It's portal for a freelance translation & transcription agency. Take a look & don't hesitate to contact us in case that you need our services. 
                             Thank you. 
                         </div>
                     </div>
@@ -25,8 +25,7 @@ const ProjectCard = () =>{
                     <div className = "overlay-project">
                         <div className = "overlay-title">Credit Wallet App</div>
                         <div className = "overlay-description">
-                            It also a personal application native mobile application building with React Native. It was only created for my personal need.
-                            To track my expenses, my incomes, my borrowing and loan. Take a look in the repository in github.
+                            It is a native mobile application building with React Native. It was only created for tracking expenses, incomes, borrowings and loans. Take a look at the repository in github.
                         </div>
                     </div>
                 </a>
