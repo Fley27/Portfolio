@@ -5,39 +5,34 @@ const ProjectCard = () =>{
         <div className = "project">
             <div className = "project-card">
                 <a href = "https://alif-lingua.herokuapp.com" target = "_blank">
-                    <div className = "img-background">
-                        <img src = {"https://alif-lingua.herokuapp.com/images/executive-business-woman-office-1.jpeg"}/>
+                    <div className = "project-card-container">
+                        <h1 className = "project-card-title">ALIF</h1>
+                        <h3  className = "project-card-subtitle">Linguae Services</h3>
                     </div>
-                    <div className = "overlay-project">
-                        <div className = "overlay-title">Alif</div>
-                        <div className = "overlay-description">
-                            It's portal for a freelance translation & transcription agency. Take a look & don't hesitate to contact us in case that you need our services. 
-                            Thank you. 
-                        </div>
+                    <div className = "project-card-description">
+                        It's portal for a freelance translation & transcription agency. Take a look & don't hesitate to contact us in case that you need our services. 
                     </div>
                 </a>
             </div>
             <div className = "project-card">
                 <a href = "https://github.com/Fley27/wallet_credit_app" target = "_blank">
-                    <div className = "img-background">
-                        <img src = {credit}/>
+                    <div className = "project-card-container">
+                        <h1 className = "project-card-title">Credit Wallet</h1>
                     </div>
-                    <div className = "overlay-project">
-                        <div className = "overlay-title">Credit Wallet App</div>
-                        <div className = "overlay-description">
-                            It is a native mobile application building with React Native. It was only created for tracking expenses, incomes, borrowings and loans. Take a look at the repository in github.
-                        </div>
+                    <div className = "project-card-description">
+                        It is a native mobile application building with React Native. It was created for tracking Expenses, Incomes, Borrowing and Loans.
+                        Take a look at the Github's repository.
                     </div>
                 </a>
             </div>
             <div className = "project-card">
                 <a href = "https://github.com/Fley27/My_Porfolio" target = "_blank">
-                    <div className = "img-background">
-                        <img src = {portrait}/>
+                    <div className = "project-card-container">
+                        <h1 className = "project-card-title">Fenley</h1>
                     </div>
-                    <div className = "overlay-project">
-                        <div className = "overlay-title">This Portfolio</div>
-                        <div className = "overlay-description">Check the github repository of this portfolio.</div>
+                    <div className = "project-card-description">
+                        It is my personal website, build with from scratch with ReactJS, Redux, CSS.
+                        Take a look at the Github's repository.
                     </div>
                 </a>
             </div>
