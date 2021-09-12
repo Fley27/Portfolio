@@ -18,7 +18,7 @@ const HeaderBody = (props) =>{
                     <div className = "text-zone-title">Hi, I'm <span className = "important">Fenley</span></div>
                     <div className = "text-zone-subtitle"><span className = "important_">Web & Mobile</span> Developer</div>
                     <div className = "text-zone-description">
-                        High level experience in web and mobile development knowledge, producing quality work.
+                        High level experience in web and mobile development, producing quality work.
                     </div>
                     <button onClick = {()=> window.location.href = "/contact"} className = "button-header-contact">
                         Contact me !
