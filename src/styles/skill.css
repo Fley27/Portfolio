@@ -1,0 +1,173 @@
+.skill-container{
+    width: 80%;
+    margin: 0 auto;
+    font-family: "Raleway";
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 60px 0;
+}
+
+.skill-item-container{
+    width: 47%;
+}
+
+.skill-item-container:nth-child(2){
+    display: flex;
+    flex-direction: column;
+}
+
+.skill-item{
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 20px;
+    color: rgb(249, 249, 249);
+    margin: 20px auto;
+    height: 90px;
+    background-color: rgb(43, 42, 42);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.skill-item-selected{
+    min-height: 250px;
+    transition: height .5s ease;
+}
+
+.skill-item-selected .skill-body{
+    display: flex;
+    transition: all .5s ease;
+}
+
+.dark-mode .skill-item{
+    color: #1d1d1d;
+    background-color: rgb(235, 235, 235);
+}
+
+.dark-mode .skill-header{
+    color: rgb(99, 132, 240);
+}
+
+.skill-header{
+    height: 90px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 600;
+    color: #08fdd8;
+}
+
+.skill-body{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    display: none;
+}
+
+.skill-body-item{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+}
+
+.skill-name{
+    width: 20%;
+    text-align: left;
+    font-weight: 300;
+}
+
+.skill-progress-bar{
+    width: 65%;
+    height: 2px;
+    background-color: rgb(89, 85, 85);
+}
+
+.skill-progress-bar-color{
+    background-color: #08fdd8;
+    height: 100%;
+    transition: all 1s linear;
+}
+
+.mongo{
+    width: 90%;
+}
+
+.mysql{
+    width: 65%;
+}
+
+.sqlite{
+    width: 80%;
+}
+
+.express{
+    width: 85%;
+}
+
+.rest-api{
+    width: 90%;
+}
+
+.node{
+    width: 80%;
+}
+
+.react{
+    width: 95%;
+}
+
+.next{
+    width: 87%;
+}
+
+.redux{
+    width: 88%;
+}
+
+.bootstrap{
+    width: 87%;
+}
+
+.css{
+    width: 92%;
+}
+
+.dark-mode .skill-progress-bar-color{
+    background-color: rgb(99, 132, 240);
+}
+
+
+@media only screen and (max-width: 1000px){
+    .skill-container{
+        flex-direction: column;
+    }
+
+    .skill-item-container{
+        width: 100%;
+    }
+
+    .skill-item{
+        width: 100%;
+        margin: 20px 0;
+    }
+}
+
+@media only screen and (max-width: 770px) {
+
+    .skill-container{
+        width: 90%;
+        padding: 30px 0;
+    }
+
+    .skill-name{
+        font-size: 14px;
+    }
+}
