@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { Provider } from "react-redux";
 import { BrowserRouter } from "react-router-dom";
+import { Helmet, HelmetProvider } from 'react-helmet-async';
 import './styles/index.css';
 import App from './App';
 import store from './redux/store';
@@ -9,11 +10,17 @@ import reportWebVitals from './reportWebVitals';
 
 ReactDOM.hydrate(
   <React.StrictMode>
-    <Provider store={store}>
-      <BrowserRouter>
-        <App />
-      </BrowserRouter>
-    </Provider>
+    <HelmetProvider>
+      
+    <Helmet>
+        <link rel="canonical" href="https://fenley.netlify.app/" />
+      </Helmet>
+      <Provider store={store}>
+        <BrowserRouter>
+          <App />
+        </BrowserRouter>
+      </Provider>
+    </HelmetProvider>
   </React.StrictMode>,
   document.getElementById('root')
 );

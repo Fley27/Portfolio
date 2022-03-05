@@ -10,10 +10,8 @@ const Work = (props) =>{
                     <div>My Portfolio</div>
                 </div>
                 <div className =  "work-description">
-                    A small gallery of the last 3 projects that I worked on. I've done everything from scratch using
-                    the Mern Stack technology.
+                    It is a showcase of some projects that I worked on, using the MERN STACK tecnology.
                 </div>
-
                 <ProjectCard/>
             </div>
         </div>

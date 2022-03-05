@@ -1,5 +1,5 @@
 import alif_linguae from "../images/alif-linguae.png";
-import fenley from "../images/fenley-porfolio.png";
+import solipresse from "../images/Screen Shot 2022-02-20 at 10.57.25 PM.png";
 import wallet from "../images/wallet.jpeg";
 
 const ProjectCard = () =>{
@@ -30,13 +30,13 @@ const ProjectCard = () =>{
                 </a>
             </div>
             <div className = "project-card">
-                <a className = "a" rel = "noreferrer" href = "https://github.com/Fley27/My_Porfolio" target = "_blank">
-                <img alt = "alif" src = {fenley} className = "card-image"/>
+                <a className = "a" rel = "noreferrer" href = "https://github.com/Fley27/Soli-Writing" target = "_blank">
+                <img alt = "alif" src = {solipresse} className = "card-image"/>
                     <div className = "overlay-card">
                         <div className = "project-card-container">
-                            <h1 className = "project-card-title">Fenley</h1>
+                            <h1 className = "project-card-title">Solipresse</h1>
                             <h4 className = "project-card-subtitle">Website</h4>
-                            <a rel = "noreferrer" href = "https://fenley.netlify.app/" target = "_blank" className = "project-card-description">https://fenley.netlify.app/</a>
+                            <a rel = "noreferrer" href = "https://fenley.netlify.app/" target = "_blank" className = "project-card-description">https://soli-writing.vercel.app/</a>
                         </div>
                     </div>
                 </a>

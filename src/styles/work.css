@@ -4,7 +4,7 @@
     margin-left: auto;
     margin-right: 0;
     font-family: "Raleway";
-    padding: 60px 0;
+    padding: 80px 0 0 0;
 }
 
 .work{
@@ -20,7 +20,7 @@
     font-weight: 600;
     color: #08fdd8;
     letter-spacing: 2px;
-    margin: 60px 0;
+    margin: 0 0 30px 0;
 }
 
 .dark-mode .work-title{
@@ -39,7 +39,7 @@
     font-weight: 500;
     letter-spacing: 2px;
     line-height: 2;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
     color: #fff;
 }
 
@@ -52,7 +52,7 @@
     height: 100%;
     margin-bottom: 10px;
     min-height: 300px;
-    margin-top: 80px;
+    margin-top: 40px;
 }
 
 .dark-mode .project-card{
@@ -63,7 +63,7 @@
     height: 300px;
     width: 32%;
     min-width: 300px;
-    border-radius: 7px;
+    border-radius: 3px;
     cursor: pointer;
     background-color: #252525f0;
     display: flex;
@@ -71,6 +71,7 @@
     justify-content: space-around;
     align-items: center;
     overflow: hidden;
+    box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px, rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
 }
 
 .project-card a{
@@ -217,22 +218,20 @@
         margin: 20px auto;
         height: 300px;
     }
-}
 
-
-@media only screen and (max-width: 600px) {
     .project-card-title{
-        font-size: 25px;
+        font-size: 14px;
     }
     
     .project-card-subtitle{
-        font-size: 12px;
+        font-size: 8px;
     }
     
     .project-card-description{
-        font-size: 14px;
+        font-size: 10px;
     }
 }
+
 
 @media only screen and (max-width: 450px) {
     .project-card{

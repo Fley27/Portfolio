@@ -18,11 +18,16 @@ const HeaderBody = (props) =>{
                     <div className = "text-zone-title">Hi, I'm <span className = "important">Fenley</span></div>
                     <div className = "text-zone-subtitle"><span className = "important_">Web & Mobile</span> Software Developer</div>
                     <div className = "text-zone-description">
-                        High level experience in web and mobile software development, building scalable applications.
+                        High level experience in building modern, fast and scalable websites & applications. 
                     </div>
-                    <button onClick = {()=> window.location.href = "#contact"} className = "button-header-contact">
-                        Contact me !
-                    </button>
+                    <div className = "buttons">
+                        <button onClick = {()=> window.location.href = "#about"} className = "button-header-contact">
+                            About me
+                        </button>
+                        <button onClick = {()=> window.location.href = "#contact"} className = "button-header-contact">
+                            Contact me
+                        </button>
+                    </div>
                     <div className = "mouse-down-container">
                         <div className = "mouse-down-icon">
                             <i className="fas fa-angle-down"></i>
@@ -35,11 +40,13 @@ const HeaderBody = (props) =>{
                 </div>
                 <div className = "image">
                     <div className = "image-header-container">
-                        <img 
-                            className = "image-header-image"
-                            src = {profile}
-                            alt = "profile"
-                        />
+                        <div className = "image-container-">
+                            <img 
+                                className = "image-header-image"
+                                src = {profile}
+                                alt = "profile"
+                            />
+                        </div>
                     </div>
                 </div>
                 <div className = "overlay"></div>
