@@ -1,6 +1,8 @@
+import React from "react"
+
 const HeaderBody = (props) =>{
     return(
-        <div className = {`header `}>
+        <div className = {`header`}>
                 <div className = "social-media-container">
                     <div className = "social-media-item">
                             <a href = "https://linkedin.com/in/fenley-jude-viky-menelas-856598193/" target = "_blank">

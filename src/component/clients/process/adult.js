@@ -1,3 +1,4 @@
+import React from "react";
 import ProcessCard from "../../cards/process";
 import "../../../styles/process.css"
 

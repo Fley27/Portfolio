@@ -1,3 +1,4 @@
+import React from "react";
 import "../../styles/client-card.css";
 
 const ClientCard = ({title, description, description2, to}) => (

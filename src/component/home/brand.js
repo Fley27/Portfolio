@@ -1,3 +1,4 @@
+import React from "react";
 import Image from "../../images/beautiful-young-curly-brunette-darkskinned-woman-in-colorful-blouse-and-orange-sunglasses-listens-to-music-in-headphones-and-sings-outside-min.jpg"
 import "../../styles/brand.css"
 

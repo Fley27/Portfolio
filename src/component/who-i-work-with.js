@@ -1,3 +1,4 @@
+import React from "react";
 import "../styles/who-i-work-with.css";
 
 const WhoIworkWith = () => (

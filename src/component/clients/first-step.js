@@ -1,3 +1,4 @@
+import React from "react";
 import "../../styles/first-step.css"
 
 const FirstStep = ({title, Image, description, description2, description3}) => (

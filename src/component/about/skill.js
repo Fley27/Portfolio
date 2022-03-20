@@ -1,3 +1,4 @@
+import React from "react";
 import Collective from "../cards/collective"; 
 import WhoIworkWith from "../who-i-work-with";
 import Image from "../../images/girl-social-media-min.jpeg"

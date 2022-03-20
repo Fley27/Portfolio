@@ -1,3 +1,4 @@
+import React from "react"
 import "../styles/footer.css"
 
 const Footer = () => (
@@ -8,15 +9,15 @@ const Footer = () => (
             <div className = "footer-title">Follow Fenley</div>
             <div className = "footer-social">
                 <div className = "social-media-link-footer">
-                    <a rel = "noreferrer" href =  "https://github.com/Fley27" target = "_blank"><i className = "fab fa-github"></i></a>
+                    <a  rel="noopener noreferrer" href =  "https://github.com/Fley27" target = "_blank"><i className = "fab fa-github"></i></a>
                 </div>
                 <div className = "social-media-link-footer ">
-                    <a rel = "noreferrer" href = "https://www.linkedin.com/in/fenley-jude-viky-menelas-856598193" target = "_blank">
+                    <a  rel="noopener noreferrer" href = "https://www.linkedin.com/in/fenley-jude-viky-menelas-856598193" target = "_blank">
                         <i className = "fab fa-linkedin"></i>
                     </a>
                 </div>
                 <div className = "social-media-link-footer ">
-                    <a rel = "noreferrer" href = "https://twitter.com/FenleyMenelas" target = "_blank">
+                    <a  rel="noopener noreferrer" href = "https://twitter.com/FenleyMenelas" target = "_blank">
                         <i className="fab fa-twitter"></i>
                     </a>
                 </div>

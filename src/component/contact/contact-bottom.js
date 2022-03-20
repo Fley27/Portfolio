@@ -1,3 +1,4 @@
+import React from "react";
 import Booking from "../cards/booking";
 import WhoIworkWith from "../who-i-work-with";
 import Image from "../../images/flat.jpeg"

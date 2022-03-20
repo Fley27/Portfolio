@@ -1,3 +1,4 @@
+import React from "react"
 import "../../styles/details.css"
 
 const Details = ({Image, subtitle, description, description2, description3, description4}) => (

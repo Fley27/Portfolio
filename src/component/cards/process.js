@@ -1,3 +1,4 @@
+import React from "react";
 import "../../styles/process-card.css";
 
 const ProcessCard = ({title, description, description2, description3}) => (

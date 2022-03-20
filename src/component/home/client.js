@@ -1,3 +1,4 @@
+import React from "react";
 import ClientCard from "../cards/client";
 import Image from "../../images/pretty-cheerful-curly-brunette-darkskinned-african-woman-in-oversized-purple-hoodie-smiles-and-touches-hair-outside-min.jpg"
 import "../../styles/client.css"
