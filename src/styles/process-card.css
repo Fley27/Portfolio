@@ -1,0 +1,70 @@
+.process-card{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    min-width: 300px;
+    height: fit-content;
+    margin: 20px 0;
+    padding: 20px 0;
+    position: relative;
+}
+
+.card-process-title{
+    font-size: 32px;
+    text-align: left;
+    font-weight: 600;
+    margin: 0;
+    width: 100%;
+}
+
+.process-card-description{
+    line-height: 1.5;
+    color: var(--Gray);
+    font-size: 17px;
+    text-align: left;
+    margin-top: 20px;
+    font-weight: 300;
+    width: 100%;
+}
+
+.read-more{
+    font-size: 18px;
+    margin: 20px 0;
+    width: fit-content;
+    text-decoration: underline;
+    line-height: 1.9;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 1280px) {
+    .process-card{
+        width: 50%;
+        padding: 0 20px;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .card-process-title{
+        font-size: 27px;
+    }
+
+    .process-card-description{
+        font-size: 16px;
+    }
+    
+}
+
+
+@media only screen and (max-width: 680px) {
+    .process-card{
+        width: 100%;
+        border: 0;
+        padding: 0;
+    }
+}
+
+@media only screen and (max-width: 350px) {
+    .process-card{
+        min-width: 260px;
+    }
+}

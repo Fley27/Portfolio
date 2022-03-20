@@ -1,0 +1,75 @@
+.who-i-work-with{
+    width: 40%;
+    min-width: 300px;   
+    height: fit-content;
+    margin: 0 auto;
+    margin-right: 0;
+}
+
+.who-i-work-with-title{
+    font-size: 25px;
+    text-transform: uppercase;
+    font-weight: 500;
+    margin-bottom: 40px;
+    text-align: left;
+}
+
+.who-i-work-with-item{
+    width: fit-content;
+    height: 30px;
+    font-size: 18px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+    color: var(--Gray);
+}
+
+.who-i-work-with-item > div{
+    display: none;    
+}
+
+.who-i-work-with-item:hover > div{
+    display: block;
+    width: 30px;
+    height: 4px;
+    background: var(--pink);
+    border-radius: 1px;
+    margin-right: 10px;
+    transition: all .3s linear;
+}
+
+.who-i-work-with-item:hover{
+    transition: all .3s linear;
+    color: var(--black);
+}
+
+@media only screen and (max-width: 970px) {
+    .who-i-work-with{
+        margin: 0;
+        margin-top: 40px;
+        width: fit-content;
+    }
+    
+    .who-i-work-with-title{
+        margin-bottom: 30px;
+    }
+}
+
+
+@media only screen and (max-width: 590px) {
+
+    .who-i-work-with-title{
+        font-size: 20px;
+        margin-bottom: 20px;
+        text-align: left;
+    }
+
+    .who-i-work-with-item{
+        font-size: 15px;
+    }
+
+    .who-i-work-with{
+        min-width: 260px;
+    }
+}

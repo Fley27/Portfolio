@@ -1,53 +1,39 @@
-import React, {useState, useEffect} from "react";
-import Contact from "../component/contact";
+import React, {useState} from "react";
 import {connect} from 'react-redux';
 import PropTypes from 'prop-types';
 import HeaderMobile from "../component/header/header-mobile";
 import Nav from "../component/header/nav";
-import "../styles/about.css"
+import Contact from "../component/contact/contact-form";
+import ContactBottom from "../component/contact/contact-bottom";
+import Footer from "../component/footer";
+import "../styles/about-page.css";
 
-const Contact_ = (props) =>{
+const ContactPage = (props) =>{
     
     const [show, setShow] = useState(false);
-    const [dark, setDark] = useState(true);
 
     const handleShow = () =>{
         setShow(!show)
     } 
-    
-    const handleDark = () =>{
-        setDark(!dark)
-    }
-
-    useEffect(() => {
-        setDark(props.reducer.mode === "true" ? true : false)
-        console.log(props.reducer.mode)
-    }, [props.reducer]); 
 
     return(
-        <div className = {`about-page ${dark ? ` dark-mode`: ``}`}>
+        <div className = {`about-page-container`}>
             <Nav
                 handleShow = {handleShow}
-                dark = {dark}
-                handleDark = {handleDark}
             />
             <HeaderMobile
-                    show =  {show}
-                    handleShow = {handleShow}
-                    main_link =  "/"
-                    dark = {dark}
-                    handleDark = {handleDark}
+                show =  {show}
+                handleShow = {handleShow}
+                main_link =  "/"
             />
-            <div className = "-component">
-                <Contact
-                    dark = {dark}
-                />
-            </div>
+            <Contact/>
+            <ContactBottom/>
+            <Footer/>
         </div>
     )
 }
 
-Contact_.propTypes = {
+ContactPage.propTypes = {
     reducer: PropTypes.object.isRequired,
     setMode: PropTypes.object.isRequired
 }
@@ -56,4 +42,4 @@ const mapStateToProps = (state) =>({
     reducer: state.reducer,
 })
 
-export default connect(mapStateToProps)(Contact_);
+export default connect(mapStateToProps)(ContactPage);

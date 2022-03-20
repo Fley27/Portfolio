@@ -1,12 +1,11 @@
 import React, {useState, useEffect} from "react";
 import {connect} from 'react-redux';
 import PropTypes from 'prop-types';
-import Contact from "../component/contact";
 import Header from "../component/header/header";
-import About from "../component/about";
-import Work from "../component/work";
+import Brand from "../component/home/brand";
+import Client from "../component/home/client";
 import HeaderMobile from "../component/header/header-mobile";
-import Skill from "../component/skill"
+import Footer from "../component/footer";
 import "../styles/home.css";
 
 const Home = (props) =>{
@@ -52,21 +51,10 @@ const Home = (props) =>{
                     dark = {dark}
                     handleDark = {handleDark}
                 />
-                <Work
-                    isInViewport = {isInViewport}
-                    dark = {dark}
-                />
-                <Skill
-                    dark = {dark}
-                />
-                <About
-                    isInViewport = {isInViewport}
-                    dark = {dark}
-                />
-                <Contact
-                    isInViewport = {isInViewport}
-                    dark = {dark}
-                />
+
+                <Brand/>
+                <Client/>
+                <Footer/>
             </div>
         </div>
     )

@@ -1,0 +1,7 @@
+
+.about-page-container{
+    background-color: var(--lightGray);
+    width: 100vw;
+    min-height: 100vh;
+    font-family: var(--prompt);;
+}
