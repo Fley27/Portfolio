@@ -1,11 +1,10 @@
 .process-card{
     display: flex;
     flex-direction: column;
-    width: 28%;
+    width: 33.33%;
     min-width: 300px;
     height: fit-content;
-    margin: 20px;
-    padding: 20px 0;
+    padding: 20px 30px;
     position: relative;
 }
 
@@ -39,7 +38,19 @@
 @media only screen and (max-width: 1280px) {
     .process-card{
         width: 50%;
-        padding: 0 20px;
+        padding: 20px 0;
+    }
+
+    .process-card:nth-child(1),
+    .process-card:nth-child(3),
+    .process-card:nth-child(5){
+        padding-left: 20px;
+    }
+
+    .process-card:nth-child(2),
+    .process-card:nth-child(4),
+    .process-card:nth-child(6){
+        padding-right: 20px;
     }
 }
 
@@ -59,7 +70,16 @@
     .process-card{
         width: 100%;
         border: 0;
-        padding: 0;
+        padding: 10px 0;
+    }
+    .process-card:nth-child(1),
+    .process-card:nth-child(3),
+    .process-card:nth-child(5),
+    .process-card:nth-child(2),
+    .process-card:nth-child(4),
+    .process-card:nth-child(6){
+        padding-left: 0;
+        padding-right: 0;
     }
 }
 

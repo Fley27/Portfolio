@@ -11,7 +11,7 @@
 }
 
 .client-card:hover{
-    border: 5px solid var(--pink);
+    border: 5px solid var(--lightPink);
     transition: border ease-in .1s;
 }
 

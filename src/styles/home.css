@@ -6,7 +6,9 @@
     --prompt: 'Prompt', sans-serif;
     --grayBorder: hsl(0, 0%, 82%);
     --grey: #bfbfbf;
-    --gradient: linear-gradient(to right, #eeeeee 33%, #bbbbbb 66%, #eeeeee 80%)
+    --gradient: linear-gradient(90deg, rgba(238,238,238,1) 33%, rgba(206,206,206,1) 66%, rgba(238,238,238,1) 100%);
+    --lightPink: rgb(240, 150, 150);
+    --lightBlack: rgba(0, 0, 0, 0.714);
 }
 
 .home-container{
@@ -27,19 +29,19 @@
     0% {
         background-position: -900px 0
     }
+
     100% {
-        background-position: 1500px 0
+        background-position: 900px 0
     }
 }
 
 .animated-background {
-    animation-duration: 3s;
-    animation-fill-mode: forwards;
+    animation-duration: 2s;
     animation-iteration-count: infinite;
     animation-name: placeHolderShimmer;
     animation-timing-function: linear;
     background-color: var(--lightGray);
     background: var(--gradient);
-    background-size: 110% 50%;
+    background-size: 100% 100%;
     position: relative;
 }

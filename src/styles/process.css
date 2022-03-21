@@ -35,7 +35,7 @@
 .process-title{
     font-size: 50px;
     font-weight: 700;
-    margin: 0 20px;
+    margin: 0 30px;
     margin-bottom: 30px;
     width: 100%;
     text-align: left;
@@ -55,6 +55,7 @@
     .process-title{
         font-size: 40px;
         margin: 0;
+        margin-bottom: 20px;
     }
 
     .process-cards{

@@ -12,7 +12,7 @@ const Details = ({Image, subtitle, description, description2, description3, desc
                     className = "details-avatar-image"
                 />
             </div>
-            <div className = "details-text">
+            <div className = "details-text"> 
                 <div className = "details-title">
                     THE DETAILS
                 </div>
@@ -49,10 +49,10 @@ const Details = ({Image, subtitle, description, description2, description3, desc
                 }
                 </div>
                 <div className = "buttons">
-                        <button onClick = {()=> window.location.href = "#about"} className = "button-header-contact about">
+                        <button onClick = {()=> window.location.href = "/about"} className = "button-header-contact about">
                             ABOUT FLEY
                         </button>
-                        <button onClick = {()=> window.location.href = "/contact"} className = "button-header-contact book">
+                        <button onClick = {()=> window.location.href = "/book"} className = "button-header-contact book">
                             CONTACT
                         </button>
                 </div>

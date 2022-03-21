@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.68d8d5a2.css",
-    "main.js": "/static/js/main.62f12490.js",
+    "main.css": "/static/css/main.cb9ea780.css",
+    "main.js": "/static/js/main.4bad4ffc.js",
     "static/js/787.3014d5d8.chunk.js": "/static/js/787.3014d5d8.chunk.js",
     "static/media/restaurant-interior-min.jpeg": "/static/media/restaurant-interior-min.1ee639952acd1566925e.jpeg",
     "static/media/beauty-blogger-min.jpeg": "/static/media/beauty-blogger-min.5706d8dc93bac6bae15d.jpeg",
@@ -21,12 +21,12 @@
     "static/media/photographer.jpeg": "/static/media/photographer.a9890a8404033cf65deb.jpeg",
     "static/media/car-dealers.webp": "/static/media/car-dealers.f056063436925084ed25.webp",
     "index.html": "/index.html",
-    "main.68d8d5a2.css.map": "/static/css/main.68d8d5a2.css.map",
-    "main.62f12490.js.map": "/static/js/main.62f12490.js.map",
+    "main.cb9ea780.css.map": "/static/css/main.cb9ea780.css.map",
+    "main.4bad4ffc.js.map": "/static/js/main.4bad4ffc.js.map",
     "787.3014d5d8.chunk.js.map": "/static/js/787.3014d5d8.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.68d8d5a2.css",
-    "static/js/main.62f12490.js"
+    "static/css/main.cb9ea780.css",
+    "static/js/main.4bad4ffc.js"
   ]
 }

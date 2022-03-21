@@ -48,7 +48,7 @@ const Skill = () => (
                     </span>
                 </div>
             </div>
-            <div className = "activity-image animated-background">
+            <div className = "activity-image">
                 <img
                     alt = "skill"
                     src = {Avatar}

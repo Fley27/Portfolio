@@ -27,7 +27,7 @@ const Nav = (props)=>{
                         <span>About</span>
                     </div>
                     <div  className = {`nav-item ${window.location.pathname !== "/" & window.location.pathname !== "/about" & window.location.pathname !== "/book"  ? " nav-item-selected": ""}`}>
-                        <span>My Clients</span>
+                        <span>My Clients <i className="fas fa-sort-down"></i></span> 
                         <div className = "dropdown">
                             <div onClick = {() => window.location.href  = "/adult-performer-and-content-creators"} className = {`dropdown-item ${window.location.pathname  === "/adult-performer-and-content-creators" ? " dropdown-item-selected" : ""}`}>Adult Performers and Content Creators</div>
                             <div onClick = {() => window.location.href  = "/social-media-influencers"}             className = {`dropdown-item ${window.location.pathname  === "/social-media-influencers" ? " dropdown-item-selected" : ""}`}>Social Media Influencers</div>

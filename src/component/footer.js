@@ -23,7 +23,7 @@ const Footer = () => (
                 </div>
             </div>
             <div className = "footer-bar"></div>
-            <div className = "footer-copyright">Copyright {new Date().getFullYear()} © Fenley Ménélas</div>
+            <div className = "footer-copyright">Copyright {new Date().getFullYear()} © <span onClick = {()=> window.location.href = "/about"} >Fenley Ménélas</span></div>
         </div>
     </div>
 ) 
