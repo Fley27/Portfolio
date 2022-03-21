@@ -1,4 +1,5 @@
 import React, {useState} from "react";
+import { Helmet } from "react-helmet-async";
 import { connect } from "react-redux";
 import PropTypes from "prop-types";
 import { sendEmail } from "../../redux/action/email";
@@ -46,42 +47,48 @@ const ContactForm = (props) => {
     }
     
     return(
-        <div className = "contact-container">
-            <div className = "contact-title">
-                Contact Fenley
-            </div>
-            <div className = "contact-form">
-                <div className = "contact-item">
-                    <div className = "info-container">
-                        <div className = "address-label">Address</div>
-                        <div className = "address">Street Villas Noa 51,<br/>Santiago De Los Caballeros 51000</div>
-                        <div className = "address-label">Email Address</div>
-                        <div className = "address "><a href = "mailto:fenleymenelas@gmail.com">fenleymenelas@gmail.com</a></div>
-                        <div className = "address-label">Phone Number</div>
-                        <div className = "address">+1 (809) 614-3463</div>
+        <>
+            <Helmet>
+                <meta name = "description" content = "Senor Web Developer in Dominican Repubic - For any inquiry don't hesitate to contact me." />
+                <link rel = "canonical" href = "/book" />
+            </Helmet>
+            <div className = "contact-container">
+                <div className = "contact-title">
+                    Contact Fenley
+                </div>
+                <div className = "contact-form">
+                    <div className = "contact-item">
+                        <div className = "info-container">
+                            <div className = "address-label">Address</div>
+                            <div className = "address">Street Villas Noa 51,<br/>Santiago De Los Caballeros 51000</div>
+                            <div className = "address-label">Email Address</div>
+                            <div className = "address "><a href = "mailto:fenleymenelas@gmail.com">fenleymenelas@gmail.com</a></div>
+                            <div className = "address-label">Phone Number</div>
+                            <div className = "address">+1 (809) 614-3463</div>
+                        </div>
+                        <form onSubmit = {handleSubmit} className = "form">
+                            <div className = "row-contact">
+                                <div className  = "col-contact">
+                                    <input onChange = {handleChange} value = {state.name} type = "text" placeholder =  "Name" name = "name"/>
+                                </div>
+                                <div className  = "col-contact">
+                                    <input onChange = {handleChange}  value = {state.email}  type = "text" placeholder =  "Email" name = "email"/>
+                                </div>
+                            </div>
+                            <div className  = "row-contact">
+                                <input onChange = {handleChange}  value = {state.subject} type = "text" placeholder =  "Subject" name = "subject"/>
+                            </div>
+                            <div className  = "row-contact">
+                                <textarea onChange = {handleChange}  value = {state.message} type = "text" placeholder =  "Message" name = "message"/>
+                            </div>
+                            <button type = "submit" className = "form-button">
+                                Send message!
+                            </button>
+                        </form>
                     </div>
-                    <form onSubmit = {handleSubmit} className = "form">
-                        <div className = "row-contact">
-                            <div className  = "col-contact">
-                                <input onChange = {handleChange} value = {state.name} type = "text" placeholder =  "Name" name = "name"/>
-                            </div>
-                            <div className  = "col-contact">
-                                <input onChange = {handleChange}  value = {state.email}  type = "text" placeholder =  "Email" name = "email"/>
-                            </div>
-                        </div>
-                        <div className  = "row-contact">
-                            <input onChange = {handleChange}  value = {state.subject} type = "text" placeholder =  "Subject" name = "subject"/>
-                        </div>
-                        <div className  = "row-contact">
-                            <textarea onChange = {handleChange}  value = {state.message} type = "text" placeholder =  "Message" name = "message"/>
-                        </div>
-                        <button type = "submit" className = "form-button">
-                            Send message!
-                        </button>
-                    </form>
                 </div>
             </div>
-        </div>
+        </>
     )
 }
 
