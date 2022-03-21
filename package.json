@@ -1,23 +1,48 @@
 {
-  "name": "portfolio",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Fley27/My_Porfolio.git"
-  },
-  "author": "Fenley Jude Viky Menelas",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Fley27/My_Porfolio/issues"
-  },
-  "homepage": "https://github.com/Fley27/My_Porfolio#readme",
+  "name": "my_porfolio",
+  "version": "0.1.0",
+  "private": true,
   "dependencies": {
-    "express": "^4.17.3",
-    "path": "^0.12.7"
+    "@testing-library/jest-dom": "^5.14.1",
+    "@testing-library/react": "^11.2.7",
+    "@testing-library/user-event": "^12.8.3",
+    "axios": "^0.21.4",
+    "emailjs-com": "^3.2.0",
+    "google-map-react": "^2.1.10",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-helmet-async": "^1.2.3",
+    "react-redux": "^7.2.5",
+    "react-router-dom": "^5.3.0",
+    "react-scripts": "^5.0.0",
+    "react-world-map": "^2.3.0",
+    "redux": "^4.1.1",
+    "redux-thunk": "^2.3.0",
+    "server": "^0.0.3",
+    "web-vitals": "^1.1.2"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }
