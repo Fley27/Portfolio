@@ -11,10 +11,6 @@ import reportWebVitals from './reportWebVitals';
 ReactDOM.hydrate(
   <React.StrictMode>
     <HelmetProvider>
-      
-    <Helmet>
-        <link rel="canonical" href="https://fenley.netlify.app/" />
-      </Helmet>
       <Provider store={store}>
         <BrowserRouter>
           <App />
