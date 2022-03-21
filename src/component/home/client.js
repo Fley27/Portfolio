@@ -11,7 +11,7 @@ const Client = () => (
                     
                     - Social Media Influencers - Bands and Music Artists - Youtube and Twitch Content Creators -
                     Digita Artists and Photographers - Small to Large Businesses. " />
-                <link rel = "canonical" href = "/book" />
+                <link rel = "canonical" href = "/" />
             </Helmet>
         <div className = "client">
             <div className = "client-image-container animated-background">
