@@ -49,6 +49,9 @@ const ContactForm = (props) => {
     return(
         <>
             <Helmet>
+                <title>
+                    Book Fenley Menelas 
+                </title>
                 <meta name = "description" content = "Senor Web Developer in Dominican Repubic - For any inquiry don't hesitate to contact me." />
                 <link rel = "canonical" href = "/book" />
             </Helmet>
