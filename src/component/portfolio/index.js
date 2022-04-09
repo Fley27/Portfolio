@@ -3,7 +3,7 @@ import Card from "./card";
 
 const Portfolio = () => (
     <div className = {styles.container}>
-        <div className = {styles.titleClass}><span></span> <p>A showcase of all the MVPs of the projects I've been working on lately</p></div>
+        <div className = {"first-step-title"}><span></span> <p>A showcase of all the MVPs of the projects I've been working on lately</p></div>
         <Card
             grade = "Website"
             title = "Alif Linguae"
