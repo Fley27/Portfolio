@@ -6,21 +6,9 @@ import "../../styles/header-mobile.css";
 
 
 const HeaderMobile = ({show, handleShow, main_link, ...props}) => {
-    const handleNavigation = (link) => {
-        window.location.href = `#${link}`
-        handleShow()
-    }
-    const handleViewMode = () => {
-        props.setMode(!props.dark)
-        handleShow()
-    }
     return(
         <div className = {`menu-mobile ${show ? ` menu-mobile-visible` : ``}`}>
             <div className = "nav-mobil-container">
-                <div className = "menu-mobile-header">
-                    <div className = "mobile-header-title">Menu</div>
-                    <button onClick = {()=> handleShow()}  className = "mobile-header-icon"><i className ="fas fa-times"></i></button>
-                </div>
                 <div className = "nav-mobile">
                     <div className = "nav-item-mobile">
                         <button onClick = {()=>window.location.href = "/"} className = {`nav-item-mobile-button ${window.location.pathname === "/" ? " nav-item-selected" : ""}`}>Home</button>
@@ -29,7 +17,10 @@ const HeaderMobile = ({show, handleShow, main_link, ...props}) => {
                         <button onClick = {()=> window.location.href = "/about"} className = {`nav-item-mobile-button ${window.location.pathname === "/about" ? " nav-item-selected" : ""}`}>About</button>
                     </div>
                     <div className = "nav-item-mobile">
-                        <button  className = {`nav-item-mobile-button ${window.location.pathname !== "/" & window.location.pathname !== "/about" & window.location.pathname !== "/book"  ? " nav-item-selected" : ""}`}>My Clients <i className="fas fa-sort-down"></i></button>
+                        <button onClick = {()=> window.location.href = "/portfolio"} className = {`nav-item-mobile-button ${window.location.pathname === "/portfolio" ? " nav-item-selected" : ""}`}>Portfolio</button>
+                    </div>
+                    <div className = "nav-item-mobile">
+                        <button  className = {`nav-item-mobile-button ${window.location.pathname !== "/" & window.location.pathname !== "/about" & window.location.pathname !== "/portfolio" & window.location.pathname !== "/Portfolio" & window.location.pathname !== "/book"  ? " nav-item-selected" : ""}`}>My Clients <i className="fas fa-sort-down"></i></button>
                         <div className = "dropdown-mobile">
                             <div onClick = {() => window.location.href  = "/adult-performer-and-content-creators"} className = {`dropdown-item-mobile ${window.location.pathname  === "/adult-performer-and-content-creators" ? " dropdown-item-mobile-selected" : ""}`}>Adult Performers and Content Creators</div>
                             <div onClick = {() => window.location.href  = "/social-media-influencers"}             className = {`dropdown-item-mobile ${window.location.pathname  === "/social-media-influencers" ? " dropdown-item-mobile-selected" : ""}`}>Social Media Influencers</div>

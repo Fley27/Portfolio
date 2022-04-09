@@ -134,7 +134,7 @@
 .nav-item > span > i{
     display: inline-block;
     position: relative;
-    bottom: 3px;
+    bottom: 2px;
 }
 
 .header{
@@ -372,16 +372,67 @@
     }
 
     .menu-icon{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
+        width: 50px;
+        height: 45px;
+        padding: 10px 5px;
+        cursor: pointer;
+        background: none;
+        border: 0;
+    }
+
+    .menu-icon > span{
+        height: 2px;
+        width: 75%;
         display: block;
-        height: fit-content;
-        width: fit-content;
-        font-size: 30px;
+        background-color: var(--lightGray);
+        border-radius: 2px;
+    }
+
+    .menu-icon > span:nth-child(2){
+        margin-left: 25%;
+    }
+
+    .close{
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
+        position: relative;
         display: flex;
         justify-content: center;
         align-items: center;
-        border: none;
-        background-color: transparent;
-        color: var(--lightGray);
+        position: relative;
+        background: none;
+        border: 0;
+    }
+
+    .close > span{
+        display: block;
+        background-color: var(--lightGray);
+        transform: rotate(45deg);
+        transition: transform .3s ease;
+        position: absolute;
+    }
+
+    .close > span:nth-child(1){
+        height: 100%;
+        width: 2px;
+    }
+    
+    .close > span:nth-child(3){
+        height: 2px;
+        width: 100%;
+    }
+    
+    .close span:nth-child(2){
+        display: none;
+    }
+
+    .close > span{
+        transition: transform .3s ease;
     }
 
     .menu-icon > i{

@@ -1,18 +1,26 @@
-import React from 'react';
+import React, {useState} from 'react';
 import {connect} from 'react-redux';
 import { setMode } from '../../redux/action/action';
 import PropTypes from 'prop-types';
 
 const Nav = (props)=>{
+    const [hidden, setHidden] = useState(true)
+
+    const handleHidden = () => {
+        setHidden(!hidden)
+    }
     return(
         <div className = {`nav-container ${props.dark ? ` dark-mode`: ``}`}>
             <div className = "nav">
                 <div className = "logo-container">
                     <div onClick = {()=> window.location.href = "/about"} className = "name-logo">Fenley Ménélas</div>
-                    <button onClick = {()=>{ 
+                    <button onClick = {()=>{
                         props.handleShow();
-                    }}  className = "menu-icon">
-                        <i className ="fas fa-bars"></i>
+                        handleHidden();
+                    }}   className = {`${!hidden ? "close" : "menu-icon"}`}>
+                        <span></span>
+                        <span></span>
+                        <span></span>
                     </button>
                 </div>
                 <div className = "nav-item-container">
@@ -26,8 +34,11 @@ const Nav = (props)=>{
                     <div onClick = {()=> window.location.href = "/about"} className = {`nav-item ${window.location.pathname === "/about" ? " nav-item-selected": ""}`}>
                         <span>About</span>
                     </div>
+                    <div onClick = {()=> window.location.href = "/portfolio"} className = {`nav-item ${window.location.pathname === "/about" ? " nav-item-selected": ""}`}>
+                        <span>Portfolio</span>
+                    </div>
                     <div  className = {`nav-item ${window.location.pathname !== "/" & window.location.pathname !== "/about" & window.location.pathname !== "/book"  ? " nav-item-selected": ""}`}>
-                        <span>My Clients <i className="fas fa-sort-down"></i></span> 
+                        <span>My Clients <i className="fas fa-sort-down"></i></span>
                         <div className = "dropdown">
                             <div onClick = {() => window.location.href  = "/adult-performer-and-content-creators"} className = {`dropdown-item ${window.location.pathname  === "/adult-performer-and-content-creators" ? " dropdown-item-selected" : ""}`}>Adult Performers and Content Creators</div>
                             <div onClick = {() => window.location.href  = "/social-media-influencers"}             className = {`dropdown-item ${window.location.pathname  === "/social-media-influencers" ? " dropdown-item-selected" : ""}`}>Social Media Influencers</div>

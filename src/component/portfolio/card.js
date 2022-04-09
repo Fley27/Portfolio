@@ -8,8 +8,8 @@ const Card = ({grade, title, description, link}) => (
         <div className = {styles.label}>{grade}</div>
         <div className = {styles.title}>{title}</div>
         <div className = {styles.description}>{description}</div>
-        <div onClick = {() => window.location.href = `/${link}`} className = {styles.link}>
-            Take a look
+        <div className = {styles.link}>
+            <a target = "_blank" href = {`${link}`}>Take a look</a>
         </div>
     </div>
 )
