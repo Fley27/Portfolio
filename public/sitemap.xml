@@ -1,7 +1,59 @@
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-<!--  created with Free Online Sitemap Generator www.xml-sitemaps.com  -->
-    <url>
-    <loc>https://fenleymenelas.netlify.app/</loc>
-    <lastmod>2022-03-21T21:44:43+00:00</lastmod>
-    </url>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<!--
+Created with Free Online Sitemap Generator www.countingcharacters.com/xml-sitemap-generator
+ -->
+<url>
+<loc>https://fenleymenelas.netlify.app/</loc>
+<lastmod>2022-03-21</lastmod>
+<changefreq>never</changefreq>
+<priority>1</priority>
+</url>
+<url>
+<loc>https://fenleymenelas.netlify.app/about</loc>
+<lastmod>2022-03-21</lastmod>
+<changefreq>never</changefreq>
+<priority>1</priority>
+</url>
+<url>
+<loc>https://fenleymenelas.netlify.app/book</loc>
+<lastmod>2022-03-21</lastmod>
+<changefreq>never</changefreq>
+<priority>1</priority>
+</url>
+<url>
+<loc>https://fenleymenelas.netlify.app/adult-performer-and-content-creators</loc>
+<lastmod>2022-03-21</lastmod>
+<changefreq>never</changefreq>
+<priority>1</priority>
+</url>
+<url>
+<loc>https://fenleymenelas.netlify.app/social-media-influencers</loc>
+<lastmod>2022-03-21</lastmod>
+<changefreq>never</changefreq>
+<priority>1</priority>
+</url>
+<url>
+<loc>https://fenleymenelas.netlify.app/bands-music-artists</loc>
+<lastmod>2022-03-21</lastmod>
+<changefreq>never</changefreq>
+<priority>1</priority>
+</url>
+<url>
+<loc>https://fenleymenelas.netlify.app/youtube-and-twitch-content-creators</loc>
+<lastmod>2022-03-21</lastmod>
+<changefreq>never</changefreq>
+<priority>1</priority>
+</url>
+<url>
+<loc>https://fenleymenelas.netlify.app/digital-artists-and-photographers</loc>
+<lastmod>2022-03-21</lastmod>
+<changefreq>never</changefreq>
+<priority>1</priority>
+</url>
+<url>
+<loc>https://fenleymenelas.netlify.app/small-to-large-businesses</loc>
+<lastmod>2022-03-21</lastmod>
+<changefreq>never</changefreq>
+<priority>1</priority>
+</url>
 </urlset>
