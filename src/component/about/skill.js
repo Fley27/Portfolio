@@ -12,10 +12,7 @@ const Skill = () => (
             <title>
                 Who is Fenley Menelas ?
             </title>
-            <meta name = "description" content = "Create or Consolidate online Presence 
-                by making beautiful, modern and scalable Websites - Web Application 
-                using ReactJS - NextJS - NodeJS - ExpressJS - MongoDB Or MySQL. 
-                Establish or elaborate innovatives strategies that allow to duplicate or increase their income X times. "/>
+            <meta name = "description" content = "Create or Consolidate online Presence by making beautiful modern and scalable Websites  Web Application using ReactJS  NextJS  NodeJS  ExpressJS  MongoDB Or MySQL Elaborate innovatives strategies that allow to duplicate or increase their income X times"/>
             <link rel = "canonical" href = "/about"/>
         </Helmet>
         <div className = "skill">
@@ -33,23 +30,24 @@ const Skill = () => (
                         What Fenley Does
                     </div>
                     <div className = "skill-description">
-                        I help <span>people</span>, <span>organization</span> and <span>corporation</span> building their presence online, 
-                        by making beautiful, modern and scalable <span>websites and web aplications</span>. Building <span>new strategies of sell</span> - for reaching prospective consumers and 
-                        turning them into customers of their products or services.
-                    <br/><br/>
+                        I help <span>people</span>, and <span>corporation</span> building their presence online, 
+                        by making beautiful, modern and scalable <span>websites and web aplications</span>. 
+                        <br/>
+                        Also Build <span>new sales strategies</span> to reach potential consumers and turn them into real customers of 
+                        your products or services.
+                        <br/><br/>
                         {
                             //<span className = "question">What is a better exposure than your own website? </span>
                         }
-                        A great website reveals 
-                        information about the current and future status of the company and the products that you want to enhance. 
-                        Moreover, a website is an act of commitment, showing people that you really want to engage, to stay in the
-                        game and make more profits, Whitout media socials - <span className = "amazon">Amazon</span> was still huge. <br/>
-                        I don not want to say that media socials are not important, it's far away. 
-                        There are tools that we can use to even make your business bigger, as example to increase traffic to your website by running ads and publication.
+                        A great website reveals information about the current and future status of the business and products you want to showcase. Also, a website is an act of engagement, 
+                        showing people that you really want to engage, stay in the game and make more profit. 
+                        We can say whitout social media <span className = "amazon">Amazon</span> was still huge. <br/>
+                        By that I don't mean that social media is not important, far from it. 
+                        They are tools that you can use to grow your business, 
+                        for example to increase traffic to your website by running ads and posts.
                     <br/><br/>
-                        If my focus is on helping people or companies building or consolidate their brand using the 
-                        latest tecnologies and innovative strategies which allow them to duplicate or increase their income X times.  
-                        If you are a restaurant, a brewery, tattoo parlor or anything else, we can definitely build something cool. 
+                        If my focus is is to help people or businesses build or strengthen their brand by using the latest technologies and innovative strategies that allow them to duplicate or increase their revenue X times. 
+                        If you are an organization or any kind of non-profit intance, we can definitely build something cool. 
                         <br/> <br/>
                         I'm all about meeting new people. Even if you just have some questions or just want to chat, reach out.
                         <br/><br/>

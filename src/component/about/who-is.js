@@ -6,8 +6,7 @@ const WhoIS = () => {
     return(
         <>
             <Helmet>
-                <meta name = "description" content = "Fullstack Developer 
-                    and Digital Marketer - Expert in SEO - Eager and Proactive seller." />
+                <meta name = "description" content = "Fullstack Developer  and Digital Marketer - Expert in SEO - Eager and Proactive seller." />
                 <link rel = "canonical" href = "/about" />
             </Helmet>
             <div className = "who-is-container">
@@ -16,14 +15,16 @@ const WhoIS = () => {
                 </div>
                 <div className = "about-information">
                     <div className = "about-information-title">
-                        I am a Fullstack Developer and an Expert Digital Marketing
+                        I am a Fullstack Developer and Digital Marketing Expert
                     </div>
                     <div className = "about-information-description">
-                        I like soccer, cars, new electronic gadgets and jewelry - oh no, not so much!!! 
+                        I speak 4 languages - French, Spanish, English and Haitian Creole. 
                         <br/> <br/>
-                        I love helping people. But what I love most is selling, and to sell well - you need a good strategy or strategies. 
-                        That's why you and I should work together to bring your dreams to life. And also to make them your bread and butter 
-                        so that you can live the life you desire and dream of. 
+                        I am a proactive and organized person who can work easily and effectively  under pressure to meet set objectives.
+                        I am also a team player - and open to everyone's ideas and opinions to improve ongoing processes...
+                        <br/><br/>
+                        I look forward to learning new things every day, 
+                        and helping more people to archive their goal while doing what they love and what they do best. 
                         <br/> <br/>
                         With that being said, nice to meet you. I'm Fenley Ménélas. Let's build something.
                     </div>

@@ -3,6 +3,7 @@ import { Switch, Route } from "react-router-dom";
 import Home from "../../pages/home";
 import About from "../../pages/about"
 import Contact from "../../pages/contact";
+import Portfolio from "../../pages/portfolio";
 import AdultPerformer from "../../pages/clients/adult-performer";
 import SocialMedia from "../../pages/clients/social-media";
 import BandsAndMusic from "../../pages/clients/bands-and-music";
@@ -15,6 +16,7 @@ const Routes = () => {
             <Switch>
             <Route exact path='/' component={Home} />
             <Route exact path='/about' component={About} />
+            <Route exact path='/portfolio' component={Portfolio} />
             <Route exact path='/book' component={Contact} />
             <Route exact path='/adult-performer-and-content-creators' component={AdultPerformer} />
             <Route exact path='/social-media-influencers' component={SocialMedia} />
