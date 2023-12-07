@@ -1,14 +1,9 @@
 import React  from "react";
-import { Helmet } from "react-helmet-async";
 import "../../styles/who-is.css"
 
 const WhoIS = () => {
     return(
         <>
-            <Helmet>
-                <meta name = "description" content = "Fullstack Developer  and Digital Marketer - Expert in SEO - Eager and Proactive seller." />
-                <link rel = "canonical" href = "/about" />
-            </Helmet>
             <div className = "who-is-container">
                 <div className = "about-title">
                     Who is Fenley Menelas? 

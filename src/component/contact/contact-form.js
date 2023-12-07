@@ -1,5 +1,4 @@
 import React, {useState} from "react";
-import { Helmet } from "react-helmet-async";
 import { connect } from "react-redux";
 import PropTypes from "prop-types";
 import { sendEmail } from "../../redux/action/email";
@@ -48,13 +47,6 @@ const ContactForm = (props) => {
     
     return(
         <>
-            <Helmet>
-                <title>
-                    Book Fenley Menelas 
-                </title>
-                <meta name = "description" content = "Senor Web Developer in Dominican Repubic - For any inquiry don't hesitate to contact me." />
-                <link rel = "canonical" href = "/book" />
-            </Helmet>
             <div className = "contact-container">
                 <div className = "contact-title">
                     Contact Fenley

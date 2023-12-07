@@ -1,0 +1,43 @@
+.container{
+    width: 90%;
+    height: 100%;
+    margin: 0 auto ;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--secondary-color);
+}
+
+
+.logo{
+    font-family: var(--font-poppins);
+    font-size: 35px;
+    font-weight: 200;
+    color: var(--secondary-color);
+}
+
+
+.menu{
+    width: fit-content;
+}
+
+
+.menu > ul{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu > ul > li{
+    list-style: none;
+    margin: 0 1rem;
+}
+
+
+.hamburger{
+    display: none;
+}

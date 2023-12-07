@@ -1,0 +1,39 @@
+.container{
+    width: 100%;
+    height: fit-content;
+    padding: 60px 0;
+}
+
+.content{
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.content > h1{
+    font-size: 50px;
+    font-weight: 800;
+    color: var(--primary-color);
+    width: 40%;
+    font-family: var(--font-poppins);
+    margin: 0;
+}
+
+
+.description{
+    width: 55%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.description > p{
+    font-size: 20px;
+    font-weight: 400;
+    font-family: var(--font-quicksand);
+    line-height: 1.8;
+}

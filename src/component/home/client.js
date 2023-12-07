@@ -1,18 +1,10 @@
 import React from "react";
-import { Helmet } from "react-helmet-async";
 import ClientCard from "../cards/client";
 import Image from "../../images/pretty-cheerful-curly-brunette-darkskinned-african-woman-in-oversized-purple-hoodie-smiles-and-touches-hair-outside-min.jpg"
 import "../../styles/client.css"
 
 const Client = () => (
     <>
-        <Helmet>
-                <meta name = "description" content = "Who I work with - Adult Performers and Content Creators
-                    
-                    - Social Media Influencers - Bands and Music Artists - Youtube and Twitch Content Creators -
-                    Digita Artists and Photographers - Small to Large Businesses. " />
-                <link rel = "canonical" href = "/" />
-            </Helmet>
         <div className = "client">
             <div className = "client-image-container animated-background">
                 <img

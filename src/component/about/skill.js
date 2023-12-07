@@ -1,5 +1,4 @@
 import React from "react";
-import { Helmet } from "react-helmet-async";
 import Collective from "../cards/collective"; 
 import WhoIworkWith from "../who-i-work-with";
 import Image from "../../images/girl-social-media-min.jpeg"
@@ -8,13 +7,6 @@ import "../../styles/skill-.css"
 
 const Skill = () => (
     <>
-        <Helmet>
-            <title>
-                Who is Fenley Menelas ?
-            </title>
-            <meta name = "description" content = "Create or Consolidate online Presence by making beautiful modern and scalable Websites  Web Application using ReactJS  NextJS  NodeJS  ExpressJS  MongoDB Or MySQL Elaborate innovatives strategies that allow to duplicate or increase their income X times"/>
-            <link rel = "canonical" href = "/about"/>
-        </Helmet>
         <div className = "skill">
             <div className = "skill-image-container animated-background">
                 <img
